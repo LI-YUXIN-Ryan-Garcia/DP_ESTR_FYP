@@ -18,7 +18,7 @@ class Differential_privacy():
         ppl = self.population
         pop_amount = ppl.shape[0]
 
-        patient = np.random.randint(1,101)
+        patient = np.random.randint(1,pop_amount+1)
         patient_fam = ppl.at[patient, 'family_id']
         print('patient: {}, patient famil: {}'.format(patient, patient_fam))
 
